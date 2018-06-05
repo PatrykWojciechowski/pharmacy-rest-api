@@ -1,10 +1,16 @@
-This is simple RESTful Web Service with CRUD functions for online pharmacy.
-The frameworks used:
-* Spring
-* Hibernate
-* Jackson
+# Pharmacy RESTful Web Service // STILL IN PROGRESS //
+
+This application is going to be simple REST API	allowing users to perform CRUD operations on the database.
+Moreover, I am planning to write a REST client with RestTemplate to consume the services.
+
+## About the app
+
+To develop this application i am going to use the following frameworks and libraries:
+- Spring framework
+- Hibernate
+- Jackson
 and more...
 
-**! Project in progress !**
+### Author
 
-
+- [Patryk Wojciechowski](https://github.com/PatrykWojciechowski)
