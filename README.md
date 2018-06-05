@@ -1,4 +1,4 @@
-# Pharmacy RESTful Web Service // STILL IN PROGRESS //
+# Pharmacy RESTful Web Service // still in progress //
 
 This application is going to be simple REST API	allowing users to perform CRUD operations on the database.
 Moreover, I am planning to write a REST client with RestTemplate to consume the services.
