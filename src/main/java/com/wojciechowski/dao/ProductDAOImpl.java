@@ -40,4 +40,17 @@ public class ProductDAOImpl implements ProductDAO {
 		
 	}
 
+	@Override
+	public void addProduct(Product product) {
+		
+		Session currentSession = sessionFactory.getCurrentSession();
+		
+		//by overwriting the id with0, we set it to null/empty and ignore any id sent in the request
+		//if the id is zero then Hibernate will insert instead of update
+		product.setId(0);
+		
+		currentSession.saveOrUpdate(product);
+		
+	}
+
 }
