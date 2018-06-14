@@ -37,7 +37,6 @@ public class ProductDAOImpl implements ProductDAO {
 		Product product = currentSession.get(Product.class, productId);
 		
 		return product;
-		
 	}
 
 	@Override
@@ -50,7 +49,26 @@ public class ProductDAOImpl implements ProductDAO {
 		product.setId(0);
 		
 		currentSession.saveOrUpdate(product);
+	}
+
+	@Override
+	public void updateProduct(Product product) {
+	
+		Session currentSession = sessionFactory.getCurrentSession();
 		
+		currentSession.saveOrUpdate(product);
+	}
+
+	@Override
+	public void deleteProduct(int productId) {
+		
+		Session currentSession = sessionFactory.getCurrentSession();
+		
+		Query theQuery = 
+				currentSession.createQuery("delete from Product where id=:productId");
+				theQuery.setParameter("productId", productId);
+				
+		theQuery.executeUpdate();	
 	}
 
 }
