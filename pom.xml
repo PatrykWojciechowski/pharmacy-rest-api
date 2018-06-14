@@ -2,8 +2,8 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.luv2code.springdemo</groupId>
-	<artifactId>spring-crm-rest</artifactId>
+	<groupId>com.wojciechowski</groupId>
+	<artifactId>pharmacy-rest-api</artifactId>
 	<version>1.0.0</version>
 	<packaging>war</packaging>
 
@@ -66,7 +66,7 @@
 			<version>${c3po.version}</version>
 		</dependency>
 
-		<!-- Servlet+JSP+JSTL -->
+		<!-- Servlet+JSP -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -78,14 +78,7 @@
 			<artifactId>javax.servlet.jsp-api</artifactId>
 			<version>2.3.1</version>
 		</dependency>
-
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
-		</dependency>
-
-
+		
 		<!-- to compensate for java 9 not including jaxb -->
 		<dependency>
 		    <groupId>javax.xml.bind</groupId>
@@ -97,7 +90,7 @@
 
 	<build>
 
-		<finalName>spring-crm-rest</finalName>
+		<finalName>pharmacy-rest-api</finalName>
 
 		<plugins>
 

@@ -20,9 +20,13 @@ import com.wojciechowski.service.ProductService;
 @RequestMapping("/api")
 public class ProductRestController {
 
-	@Autowired
 	private ProductService productService;
 	
+	@Autowired
+	public ProductRestController(ProductService productService) {
+		this.productService = productService;
+	}
+
 	@GetMapping("/products")
 	public List<Product> getProducts(){
 	

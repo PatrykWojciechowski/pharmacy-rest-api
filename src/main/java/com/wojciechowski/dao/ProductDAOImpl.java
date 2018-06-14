@@ -13,9 +13,13 @@ import com.wojciechowski.entity.Product;
 @Repository
 public class ProductDAOImpl implements ProductDAO {
 
-	@Autowired
 	private SessionFactory sessionFactory;
 	
+	@Autowired
+	public ProductDAOImpl(SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
+	}
+
 	public List<Product> getProducts() {
 		
 		Session currentSession = sessionFactory.getCurrentSession();

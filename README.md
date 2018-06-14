@@ -1,14 +1,14 @@
-# Pharmacy RESTful Web Service // still in progress //
+# Pharmacy RESTful Web Service
 
-This application is going to be simple REST API	allowing users to perform CRUD operations on the database.
-Moreover, I am planning to write a REST client with RestTemplate to consume the services.
+This application is simple REST API	allowing users to perform CRUD operations on the database.
 
 ## About the app
 
-To develop this application i am going to use the following frameworks and libraries:
-- Spring framework
-- Hibernate
+To develop this application i used the following technologies:
+- Spring (MVC, ORM)
+- Hibernate ORM
 - Jackson
+- MySQL database
 and more...
 
 ### Author

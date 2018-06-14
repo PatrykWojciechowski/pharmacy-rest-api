@@ -13,8 +13,12 @@ import com.wojciechowski.entity.Product;
 @Service
 public class ProductServiceImpl implements ProductService{
 
-	@Autowired
 	private ProductDAO productDAO;
+
+	@Autowired
+	public ProductServiceImpl(ProductDAO productDAO) {
+		this.productDAO = productDAO;
+	}
 
 	@Override
 	@Transactional
