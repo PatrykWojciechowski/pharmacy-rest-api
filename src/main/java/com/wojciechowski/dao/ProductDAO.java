@@ -7,5 +7,6 @@ import com.wojciechowski.entity.Product;
 public interface ProductDAO {
 
 	public List<Product> getProducts();
+	public Product getProduct(int productId);
 	
 }
